@@ -1,11 +1,5 @@
 # Agent Book
 
-<center>
-
-<!-- ![image.png](docs/logo.png) -->
-
-</center>
-
 <div align="center">
     <img alt="python versions" src="https://img.shields.io/badge/python-3.10-blue?color=5271FF">
     <a href="https://opensource.org/licenses/MIT">
@@ -22,6 +16,12 @@
     </a>
 </div>
 <br />
+
+<center>
+
+<img src="data/image.png" width="400" alt="image">
+
+</center>
 
 ## Description
 
