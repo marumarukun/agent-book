@@ -1,0 +1,56 @@
+{
+	// Workbench settings
+	"workbench.iconTheme": "material-icon-theme", // アイコンテーマを設定
+	"workbench.preferredDarkColorTheme": "Monokai Dimmed", // ダークテーマをMonokai Dimmedに設定
+	"workbench.preferredLightColorTheme": "Default Light Modern", // ライトテーマをDefault Light Modernに設定
+	"workbench.editor.enablePreview": false, // エディタのプレビューを無効にする
+	"workbench.tree.indent": 20, // ツリーのインデントを20に設定
+	"window.commandCenter": false, // コマンドセンターを無効にする
+	// Power Mode settings
+	"powermode.combo.location": "off", // Power Modeのコンボ位置をオフに設定
+	"powermode.enabled": true, // Power Modeを有効にする
+	"powermode.shake.enabled": false, // Power Modeのシェイク効果を無効にする
+	// Editor settings
+	"editor.minimap.enabled": false, // エディタのミニマップを無効にする
+	"editor.rulers": [
+		120 // エディタのルーラーを120文字に設定
+	],
+	"editor.formatOnType": true, // タイプ時にフォーマットを実行
+	"editor.formatOnSave": true, // 保存時にフォーマットを実行
+	"editor.formatOnPaste": true, // ペースト時にフォーマットを実行
+	"editor.cursorBlinking": "phase", // カーソルの点滅を有効にする
+	"editor.cursorSmoothCaretAnimation": "explicit", // カーソルのアニメーションを有効にする
+	// Notebook settings
+	"notebook.output.scrolling": true, // ノートブックの出力をスクロール可能にする
+	"notebook.insertFinalNewline": true, // ノートブックの最後に改行を挿入する
+	"jupyter.askForKernelRestart": false, // Jupyterカーネルの再起動確認を無効にする
+	"notebook.formatOnSave.enabled": true,
+	"notebook.codeActionsOnSave": {
+		"notebook.source.fixAll": true,
+		"notebook.source.organizeImports": true
+	},
+	// Explorer settings
+	"explorer.confirmDelete": false, // ファイル削除の確認を無効にする
+	"explorer.confirmDragAndDrop": false, // ドラッグ＆ドロップの確認を無効にする
+	// Files settings
+	"files.insertFinalNewline": true, // ファイルの最後に改行を挿入する
+	"files.autoSave": "afterDelay", // ファイルを遅延後に自動保存する
+	"files.exclude": {
+		"src/__pycache__": true, // src/__pycache__を除外
+		".mypy_cache": true, // .mypy_cacheを除外
+		".pytest_cache": true, // .pytest_cacheを除外
+		".ruff_cache": true, // .ruff_cacheを除外
+		".venv": true, // .venvを除外
+	},
+	// Python settings
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff", // Pythonのデフォルトフォーマッタをcharliermarsh.ruffに設定
+		"editor.formatOnSave": true, // 保存時にフォーマットを実行する
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit", // 保存時にimportを自動整形
+			"source.fixAll": "explicit" // 保存時にエラーを修正
+		}
+	},
+	// Window settings
+	"window.autoDetectColorScheme": true, // カラースキームを自動検出する
+}
