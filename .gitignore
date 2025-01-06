@@ -9,4 +9,7 @@ wheels/
 # venv
 .venv
 
+# env
+.env
+
 results/
