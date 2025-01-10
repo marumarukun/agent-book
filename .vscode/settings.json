@@ -51,6 +51,9 @@
 			"source.fixAll": "explicit" // 保存時にエラーを修正
 		}
 	},
+	"python.analysis.diagnosticSeverityOverrides": {
+		"reportMissingImports": "none" // pylanceのmissing importsを無効にする
+	},
 	// Window settings
 	"window.autoDetectColorScheme": true, // カラースキームを自動検出する
 }
