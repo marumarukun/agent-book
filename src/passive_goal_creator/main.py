@@ -34,11 +34,11 @@ class PassiveGoalCreator:
 
 
 # 実行例
-# uv run python chapter/012/01_passive_goal_creator/main.py --task "スマートフォン向けの健康アプリを開発したい"
+# uv run python -m src.passive_goal_creator.main --task "スマートフォン向けの健康アプリを開発したい"
 def main():
     import argparse
 
-    from settings import Settings
+    from src.settings import Settings
 
     settings = Settings()
 
