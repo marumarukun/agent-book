@@ -192,7 +192,7 @@ def main():
     parser.add_argument("--query", type=str, required=True, help="実行するクエリ")
     args = parser.parse_args()
 
-    llm = ChatOpenAI(model=settings.openai_smart_model, temperature=settings.temperature)
+    llm = ChatOpenAI(model=settings.openai_mini_model, temperature=settings.temperature)
 
     single_path_plan_generation = SinglePathPlanGeneration(llm=llm)
     final_output = single_path_plan_generation.run(query=args.query)
