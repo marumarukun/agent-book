@@ -16,7 +16,7 @@ from src.response_optimizer.main import ResponseOptimizer
 
 
 class DecomposedTasks(BaseModel):
-    values: list[str] = Field(default_factory=list, min_length=3, max_length=5, description="3~5個に分解されたタスク")
+    values: list[str] = Field(default_factory=list, min_items=3, max_items=5, description="3~5個に分解されたタスク")
 
 
 class SinglePathPlanGenerationState(BaseModel):
