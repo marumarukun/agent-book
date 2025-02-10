@@ -41,6 +41,11 @@ class Settings(BaseSettings):
 
     def __init__(self, **values):
         """設定を初期化し、環境変数を設定"""
+        # 環境変数をクリアして再読み込み
+        for key in list(os.environ.keys()):
+            if key in self.__annotations__:
+                del os.environ[key]
+
         super().__init__(**values)
         self._set_env_variables()
 
